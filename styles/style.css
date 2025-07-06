@@ -81,9 +81,11 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
+  
   grid-template-rows: repeat(4, min-content);
 
-  /* min-block-size: 668px; */  
+
+
   margin-inline: 10px;
 }
 
