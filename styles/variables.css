@@ -2,18 +2,52 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+/* Базовые переменные с поддержкой prefers-color-scheme */
 :root {
-
   --primary-font-family: 'IBM Plex Mono', monospace;
-
-  /* --accent-color: #FF0070;
+  
+  /* Базовые цвета для светлой темы (по умолчанию) */
+  --accent-color: #FF0070;
   --text-content-color: #F1B2CE;
   --text-header-color: #000;
-  --page-background-color: #000028;
-  
+  --page-background-color: #FFF1F7;
   --focus-outline-color: #F1B2CE;
   --title-color: rgba(219, 0, 255, 1);
   --header-light-shadow: rgba(255, 0, 112, 1);
   --theme-menu-hover: rgba(255, 0, 112, 0.4);
-  --card-title-color: rgba(0, 0, 40, 1); */
+  --card-title-color: rgba(0, 0, 40, 1);
+  
+  /* Светлая тема по умолчанию */
+  --rec-visibility: hidden;
+  --decorated-zone-color: #353430;
+  --header-menu-button-text-color: #353430;
+  --header-menu-button-border-color: #353430;
+  --header-menu-button-border-color-on-hover: rgba(50, 49, 45, 0.4);
+  --text-title-color: #FFC2E6;
+  --text-title-shadow-color: #FF8DCB;
+  --article-text-color: #353430;
+  --article-background-color: #FF8DCB;
+  --article-header-text-color: #353430;
+  --text-link-shadow-color: #FF8DCB;
+  --text-link-focus-outline-color: #353430;
+}
+
+/* Темная тема через prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background-color: #000028;
+    --rec-visibility: visible;
+    --header-menu-button-text-color: var(--accent-color);
+    --header-menu-button-border-color: var(--accent-color);
+    --header-menu-button-border-color-on-hover: rgba(255, 0, 112, 0.4);
+    --decorated-zone-color: var(--accent-color);
+    --text-title-color: #DB00FF;
+    --text-title-shadow-color: #FF0070;
+    --article-text-color: #F1B2CE;
+    --article-background-color: var(--accent-color);
+    --article-header-text-color: #000028;
+    --text-link-shadow-color: var(--accent-color);
+    --text-link-focus-outline-color: var(--focus-outline-color);
+  }
 }

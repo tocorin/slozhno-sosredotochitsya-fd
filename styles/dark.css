@@ -9,48 +9,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #FF0070;
-  --text-content-color: #F1B2CE;
-  --text-header-color: #000;
   --page-background-color: #000028;
-  --focus-outline-color: #F1B2CE;
-  --title-color: rgba(219, 0, 255, 1);
-  --header-light-shadow: rgba(255, 0, 112, 1);
-  --theme-menu-hover: rgba(255, 0, 112, 0.4);
-  --card-title-color: rgba(0, 0, 40, 1);
-
   --rec-visibility: visible;
-
   --header-menu-button-text-color: var(--accent-color);
   --header-menu-button-border-color: var(--accent-color);
-  --header-menu-button-border-color-on-hover:  rgba(255, 0, 112, 0.4);
-
+  --header-menu-button-border-color-on-hover: rgba(255, 0, 112, 0.4);
   --decorated-zone-color: var(--accent-color);
-  --header-menu-button-color: var(--accent-color);
-
-    /* 'no focus' and 'focus' */
   --text-title-color: #DB00FF;
   --text-title-shadow-color: #FF0070;
-
-    /* заголовки и текст */
-
-  /* заголовок с background */
   --article-text-color: #F1B2CE;
   --article-background-color: var(--accent-color);
   --article-header-text-color: #000028;
-
-
-
-    /* ссылка */
   --text-link-shadow-color: var(--accent-color);
   --text-link-focus-outline-color: var(--focus-outline-color);
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
-
-.theme-light header {
+.theme-dark header {
   background-image: url(../images/cover-image-dark.png);
 }
 
