@@ -31,6 +31,8 @@
   --article-header-text-color: #353430;
   --text-link-shadow-color: #FF8DCB;
   --text-link-focus-outline-color: #353430;
+
+  --background-image-url: url(../images/cover-image-light.png);
 }
 
 /* Темная тема через prefers-color-scheme */
@@ -49,5 +51,15 @@
     --article-header-text-color: #000028;
     --text-link-shadow-color: var(--accent-color);
     --text-link-focus-outline-color: var(--focus-outline-color);
+
+    --background-image-url: url(../images/cover-image-dark.png);
+  }
+
+  .theme-auto .section__title {
+    --article-header-text-color: var(--accent-color);
+  }
+
+  .theme-auto .title-group {
+    --article-header-text-color: #000028;
   }
 }

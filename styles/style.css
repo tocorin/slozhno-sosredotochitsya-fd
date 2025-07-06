@@ -253,7 +253,7 @@
 
 .section__card-list {
   display: grid;
-  grid-template-columns: 1f;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 

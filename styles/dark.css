@@ -22,11 +22,9 @@
   --article-header-text-color: #000028;
   --text-link-shadow-color: var(--accent-color);
   --text-link-focus-outline-color: var(--focus-outline-color);
+  --background-image-url: url(../images/cover-image-dark.png);
 }
 
-.theme-dark header {
-  background-image: url(../images/cover-image-dark.png);
-}
 
 .theme-dark .section__title {
   --article-header-text-color: var(--accent-color);
