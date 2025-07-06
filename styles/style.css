@@ -286,7 +286,7 @@
 }
 
 /* добавляем отступ между параграфами */
-.card__text:not(:last-child){
+.card__text:not(:last-child) {
   margin-block-end: 10px;
 }
 
