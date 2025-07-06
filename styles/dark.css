@@ -33,3 +33,34 @@
 .theme-dark .title-group {
   --article-header-text-color: #000028;
 }
+
+
+
+/* Темная тема через prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background-color: #000028;
+    --rec-visibility: visible;
+    --header-menu-button-text-color: var(--accent-color);
+    --header-menu-button-border-color: var(--accent-color);
+    --header-menu-button-border-color-on-hover: rgba(255, 0, 112, 0.4);
+    --decorated-zone-color: var(--accent-color);
+    --text-title-color: #DB00FF;
+    --text-title-shadow-color: #FF0070;
+    --article-text-color: #F1B2CE;
+    --article-background-color: var(--accent-color);
+    --article-header-text-color: #000028;
+    --text-link-shadow-color: var(--accent-color);
+    --text-link-focus-outline-color: var(--focus-outline-color);
+
+    --background-image-url: url(../images/cover-image-dark.png);
+  }
+
+  .theme-auto .section__title {
+    --article-header-text-color: var(--accent-color);
+  }
+
+  .theme-auto .title-group {
+    --article-header-text-color: #000028;
+  }
+}
