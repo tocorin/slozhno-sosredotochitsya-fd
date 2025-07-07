@@ -36,8 +36,8 @@
 }
 
 .text-link:hover {
-  border-bottom-color: currentColor;
-  text-decoration: underline;
+  border-block-end: 1px solid currentColor;
+  text-decoration: none;
 }
 
 .text-link:focus {
