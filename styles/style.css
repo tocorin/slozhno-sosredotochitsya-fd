@@ -344,7 +344,6 @@
 
   .fullscreen {
     min-block-size: 1024px;
-    height: 100vh;
   }
 
   .header {
